@@ -25,7 +25,8 @@ function init(){
      * 正交照相机
      */
     var camera = new THREE.OrthographicCamera(-2,2,1.5,-1.5,1,10);
-    camera.position.set(0,0,5);
+    camera.position.set(4,-3,5);
+    camera.lookAt(new THREE.Vector3(0,0,0));
     scene.add(camera);
     var cube = new THREE.Mesh(new THREE.CubeGeometry(1,1,1),
         new THREE.MeshBasicMaterial({
